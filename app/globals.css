@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night-950: #04050d;
+  --color-night-900: #080a16;
+  --color-night-800: #0d1023;
+  --color-night-700: #151935;
+  --color-night-600: #1e2447;
+
+  --color-neon-300: #7dd3fc;
+  --color-neon-400: #38bdf8;
+  --color-neon-500: #0ea5e9;
+
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-glow-blue: 0 0 40px -8px rgba(56, 189, 248, 0.45);
+  --shadow-glow-violet: 0 0 40px -8px rgba(139, 92, 246, 0.45);
+  --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-pulse-slow: pulse 5s ease-in-out infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-16px);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  background-color: var(--color-night-950);
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(56, 189, 248, 0.35);
+  color: #f8fafc;
+}
+
+/* Slim, theme-matched scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-night-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-night-600);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3564;
+}
+
+@utility glass {
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Glass with an opaque base — for surfaces that overlap content (navbar, menus)
+   so they stay readable even where backdrop-filter is unavailable. */
+@utility glass-solid {
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+    rgba(8, 10, 22, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+@utility text-gradient {
+  background: linear-gradient(92deg, #7dd3fc 0%, #38bdf8 40%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
