@@ -1,0 +1,41 @@
+{
+  "name": "streamnova-iptv-landing",
+  "version": "1.0.0",
+  "description": "Premium IPTV and streaming subscription landing website built with Next.js 15.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmehdiLACHKAR/tv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elmehdiLACHKAR/tv/issues"
+  },
+  "homepage": "https://github.com/elmehdiLACHKAR/tv#readme",
+  "dependencies": {
+    "framer-motion": "^12.42.2",
+    "lucide-react": "^1.23.0",
+    "next": "^15.5.20",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^15.5.20",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3"
+  }
+}
