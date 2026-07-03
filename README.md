@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NexStream — Premium IPTV Landing Website
+
+A modern, premium IPTV/e-commerce landing website built with Next.js 15, React, Tailwind CSS, and Framer Motion.
+
+## Tech Stack
+
+- **Next.js 15** — App Router, Server Components, SEO optimized
+- **React 19** — UI library
+- **Tailwind CSS v4** — Utility-first styling
+- **Framer Motion** — Smooth animations
+- **Lucide React** — Icon library
+
+## Features
+
+- Dark theme with neon blue/purple accents
+- Glassmorphism cards with hover effects
+- Sticky navbar with mobile menu
+- Animated gradient background
+- Responsive mobile-first design
+- WhatsApp & email checkout flow
+- Contact form with support options
+
+## Pages
+
+| Page | Route | Description |
+|------|-------|-------------|
+| Home | `/` | Hero, pricing, features, testimonials, FAQ |
+| Plans | `/products` | Full subscription cards with features |
+| Checkout | `/checkout` | Order summary with WhatsApp/email payment |
+| Contact | `/contact` | Contact form and support channels |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                  # Next.js App Router pages
+│   ├── page.tsx          # Home page
+│   ├── products/         # Plans page
+│   ├── checkout/         # Checkout page
+│   └── contact/          # Contact page
+├── components/
+│   ├── layout/           # Navbar, Footer
+│   ├── sections/         # Page sections (Hero, FAQ, etc.)
+│   └── ui/               # Reusable UI components
+├── lib/
+│   ├── constants.ts      # Site config & contact info
+│   └── data.ts           # Plans, features, testimonials, FAQ
+└── types/
+    └── index.ts          # TypeScript interfaces
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+Update contact details in `src/lib/constants.ts` and plan pricing in `src/lib/data.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
