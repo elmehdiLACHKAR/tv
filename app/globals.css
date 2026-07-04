@@ -67,3 +67,45 @@ body {
 .soft-border {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll linear infinite;
+}
+
+.marquee-track[data-direction="reverse"] {
+  animation-direction: reverse;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.whatsapp-bubble {
+  position: relative;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.16), rgba(18, 140, 82, 0.1));
+  border: 1px solid rgba(37, 211, 102, 0.28);
+}

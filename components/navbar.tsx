@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -22,8 +23,15 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#050713]/70 backdrop-blur-2xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 font-bold text-white shadow-[0_0_32px_rgba(38,217,255,0.35)]">
-            S
+          <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-2xl shadow-[0_0_32px_rgba(38,217,255,0.35)]">
+            <Image
+              src="/brand/streamnova-icon.png"
+              alt={`${brand.name} logo`}
+              fill
+              sizes="40px"
+              className="object-cover"
+              priority
+            />
           </span>
           <span>
             <span className="block font-[var(--font-jakarta)] text-lg font-black tracking-tight text-white">

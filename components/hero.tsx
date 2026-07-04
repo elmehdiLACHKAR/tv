@@ -19,7 +19,7 @@ export function Hero() {
             className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-200/20 bg-cyan-200/10 px-4 py-2 text-sm font-bold text-cyan-100"
           >
             <Star size={16} className="fill-cyan-200 text-cyan-200" />
-            Premium IPTV subscriptions for modern streamers
+            Premium IPTV subscriptions built for the USA
           </motion.div>
 
           <motion.h1
@@ -28,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-[var(--font-jakarta)] text-5xl font-black tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl"
           >
-            Stream live TV, sports and movies in a{" "}
+            Stream NFL football, live TV and movies in a{" "}
             <span className="text-gradient">premium 4K experience.</span>
           </motion.h1>
 
@@ -38,8 +38,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl"
           >
-            Launch a high-conversion streaming storefront with flexible IPTV plans,
-            instant activation messaging, sleek animations and a mobile-first checkout.
+            Built for American streamers: catch every NFL Sunday, follow the NBA, MLB
+            and NHL, and unlock a full movies, series and anime library with flexible
+            IPTV plans and a mobile-first checkout.
           </motion.p>
 
           <motion.div
@@ -104,7 +105,7 @@ export function Hero() {
               </div>
 
               <div className="grid gap-3">
-                {["Champions League Ultra HD", "Cinema Premiere", "Family Kids Hub"].map(
+                {["Gridiron Nation Live · NFL Football", "Liberty Cinema", "Sunrise Kids Network"].map(
                   (item, index) => (
                     <div
                       key={item}
