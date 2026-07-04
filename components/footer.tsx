@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { brand } from "@/lib/data";
 
@@ -14,8 +15,14 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.3fr_0.7fr_0.8fr] lg:px-8">
         <div>
           <div className="mb-4 flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 font-black text-white">
-              S
+            <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-2xl">
+              <Image
+                src="/brand/streamnova-icon.png"
+                alt={`${brand.name} logo`}
+                fill
+                sizes="44px"
+                className="object-cover"
+              />
             </span>
             <div>
               <p className="font-[var(--font-jakarta)] text-xl font-black text-white">
@@ -25,8 +32,9 @@ export function Footer() {
             </div>
           </div>
           <p className="max-w-xl text-sm leading-6 text-slate-400">
-            A modern premium IPTV storefront concept with flexible subscription plans,
-            responsive support, and a conversion-focused purchase flow.
+            A modern premium IPTV storefront concept built for American streamers, with
+            NFL-ready sports coverage, flexible subscription plans and a
+            conversion-focused purchase flow.
           </p>
         </div>
 

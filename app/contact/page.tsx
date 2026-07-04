@@ -49,7 +49,7 @@ export default function ContactPage() {
               >
                 <option>Starter</option>
                 <option>Plus</option>
-                <option>Elite</option>
+                <option>Premium</option>
               </select>
             </label>
             <label className="mt-5 grid gap-2 text-sm font-bold text-slate-200">

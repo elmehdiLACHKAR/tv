@@ -19,25 +19,31 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://streamnova.example"),
   title: {
-    default: `${brand.name} | Premium IPTV Streaming Plans`,
+    default: `${brand.name} | Premium American IPTV Streaming Plans`,
     template: `%s | ${brand.name}`,
   },
   description:
-    "A premium IPTV and streaming subscription website with flexible monthly, quarterly and annual plans, fast activation and responsive support.",
+    "A premium IPTV and streaming subscription website for the USA, with NFL and American sports coverage, flexible monthly, quarterly and annual plans, fast activation and responsive support.",
   keywords: [
     "IPTV",
+    "American IPTV",
     "streaming subscription",
-    "premium IPTV",
+    "premium IPTV USA",
     "live TV",
+    "NFL streaming",
     "4K channels",
     "sports streaming",
   ],
   openGraph: {
-    title: `${brand.name} | Premium IPTV Streaming Plans`,
+    title: `${brand.name} | Premium American IPTV Streaming Plans`,
     description:
-      "Flexible IPTV subscription plans with premium channels, 4K support and fast activation.",
+      "Flexible U.S. IPTV subscription plans with NFL and American sports channels, 4K support and fast activation.",
     type: "website",
     url: "https://streamnova.example",
+  },
+  icons: {
+    icon: "/brand/streamnova-icon.png",
+    apple: "/brand/streamnova-icon.png",
   },
   robots: {
     index: true,

@@ -1,19 +1,20 @@
 import {
   BadgeCheck,
   Clock3,
-  Globe2,
   Headphones,
   MonitorPlay,
   ShieldCheck,
   Sparkles,
+  Trophy,
   Zap,
 } from "lucide-react";
 
 export const brand = {
   name: "StreamNova",
-  tagline: "Premium IPTV for every screen",
+  tagline: "Premium IPTV built for the USA",
+  country: "United States",
   email: "support@streamnova.example",
-  whatsapp: "+1 555 014 9088",
+  whatsapp: "+1 (555) 014-9088",
   whatsappUrl:
     "https://wa.me/15550149088?text=Hi%20StreamNova%2C%20I%20want%20to%20start%20a%20premium%20IPTV%20subscription.",
 };
@@ -23,7 +24,7 @@ export const plans = [
     name: "Starter",
     period: "1 month",
     price: "$14",
-    description: "A flexible plan for trying premium live TV and on-demand streaming.",
+    description: "A flexible plan for trying premium U.S. live TV and on-demand streaming.",
     features: [
       "18,000+ live channels",
       "4K, FHD and HD streams",
@@ -37,10 +38,10 @@ export const plans = [
     name: "Plus",
     period: "3 months",
     price: "$29",
-    description: "The best-selling plan for consistent entertainment at a better value.",
+    description: "The best-selling plan for consistent American entertainment at a better value.",
     features: [
       "All Starter features",
-      "Premium sports and cinema",
+      "American sports and cinema",
       "Priority setup guidance",
       "Anti-freeze stream routing",
     ],
@@ -48,17 +49,17 @@ export const plans = [
     popular: true,
   },
   {
-    name: "Elite",
+    name: "Premium",
     period: "12 months",
-    price: "$79",
-    description: "A full year of premium streaming with the strongest long-term savings.",
+    price: "$49.99",
+    description: "A full year of premium U.S. streaming at the strongest long-term savings.",
     features: [
       "All Plus features",
-      "Massive VOD library",
-      "Multi-device setup support",
+      "Full American sports coverage",
+      "Massive movies, series and anime library",
       "VIP renewal reminders",
     ],
-    cta: "Go annual",
+    cta: "Go Premium annual",
     popular: false,
   },
 ];
@@ -71,13 +72,13 @@ export const features = [
     icon: MonitorPlay,
   },
   {
-    title: "Global channel lineup",
+    title: "Full American sports coverage",
     description:
-      "Access international sports, movies, shows, news and family entertainment in one place.",
-    icon: Globe2,
+      "Follow the NFL regular season and playoffs, NBA, MLB and NHL alongside U.S. news, movies and family entertainment in one place.",
+    icon: Trophy,
   },
   {
-    title: "Fast activation",
+    title: "Fast U.S. activation",
     description:
       "Get your subscription details and setup guidance quickly after checkout confirmation.",
     icon: Zap,
@@ -105,29 +106,64 @@ export const features = [
 export const highlights = [
   { value: "18K+", label: "Live channels" },
   { value: "4K", label: "Ultra HD ready" },
+  { value: "NFL", label: "American football live" },
   { value: "24/7", label: "Support access" },
-  { value: "99%", label: "Uptime focus" },
 ];
 
 export const testimonials = [
   {
     quote:
-      "The setup was simple and the channel quality feels miles ahead of my old provider.",
-    name: "Amina R.",
-    role: "Sports fan",
+      "Setup took five minutes and I caught the NFL Sunday slate in 4K on my first try. Huge upgrade.",
+    name: "Marcus T.",
+    role: "Dallas, TX",
+    time: "9:41 AM",
   },
   {
     quote:
-      "I needed a premium-looking service for my family TV and mobile devices. StreamNova delivered.",
-    name: "Lucas M.",
-    role: "Family plan user",
+      "I needed a premium-looking service for the whole family's TVs and phones. StreamNova delivered.",
+    name: "Emily R.",
+    role: "Austin, TX",
+    time: "6:12 PM",
   },
   {
     quote:
-      "Fast support on WhatsApp, clean instructions, and no complicated hardware. Exactly what I wanted.",
-    name: "Nora K.",
-    role: "Smart TV customer",
+      "Fast reply on WhatsApp, clean instructions, no complicated hardware. Exactly what I wanted.",
+    name: "Jordan K.",
+    role: "Phoenix, AZ",
+    time: "11:05 AM",
   },
+  {
+    quote:
+      "Switched for the sports package and stayed for the movie and anime library. Great value.",
+    name: "Priya S.",
+    role: "Orlando, FL",
+    time: "8:27 PM",
+  },
+];
+
+export const channels = [
+  { name: "Gridiron Nation Live", category: "American Football" },
+  { name: "Hoops Central HD", category: "Basketball" },
+  { name: "Diamond League Network", category: "Baseball" },
+  { name: "Ice Nation Hockey", category: "Hockey" },
+  { name: "Capitol News 24", category: "News" },
+  { name: "Liberty Cinema", category: "Movies" },
+  { name: "Sunrise Kids Network", category: "Family" },
+  { name: "Stage Country Music", category: "Music" },
+  { name: "Vantage Business Live", category: "Finance" },
+  { name: "Metro Weather Now", category: "Weather" },
+];
+
+export const streamingLibrary = [
+  { title: "Neon Skyline", type: "Movie", genre: "Sci-Fi" },
+  { title: "Boardwalk Nights", type: "Series", genre: "Drama" },
+  { title: "Starbound Academy", type: "Anime", genre: "Action" },
+  { title: "Midnight Circuit", type: "Movie", genre: "Thriller" },
+  { title: "Coastal Heights", type: "Series", genre: "Drama" },
+  { title: "Shadow Ronin", type: "Anime", genre: "Fantasy" },
+  { title: "Route 9 Diner", type: "Series", genre: "Comedy" },
+  { title: "Ember & Ash", type: "Movie", genre: "Romance" },
+  { title: "Pixel Knights", type: "Anime", genre: "Adventure" },
 ];
 
 export const faqs = [
