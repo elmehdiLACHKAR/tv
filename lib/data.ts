@@ -110,35 +110,16 @@ export const highlights = [
   { value: "24/7", label: "Support access" },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Setup took five minutes and I caught the NFL Sunday slate in 4K on my first try. Huge upgrade.",
-    name: "Marcus T.",
-    role: "Dallas, TX",
-    time: "9:41 AM",
-  },
-  {
-    quote:
-      "I needed a premium-looking service for the whole family's TVs and phones. StreamNova delivered.",
-    name: "Emily R.",
-    role: "Austin, TX",
-    time: "6:12 PM",
-  },
-  {
-    quote:
-      "Fast reply on WhatsApp, clean instructions, no complicated hardware. Exactly what I wanted.",
-    name: "Jordan K.",
-    role: "Phoenix, AZ",
-    time: "11:05 AM",
-  },
-  {
-    quote:
-      "Switched for the sports package and stayed for the movie and anime library. Great value.",
-    name: "Priya S.",
-    role: "Orlando, FL",
-    time: "8:27 PM",
-  },
+/**
+ * Reviews are shown as real WhatsApp screenshots rather than typed quotes.
+ * Drop your own screenshots into `public/reviews/` (any image name) and
+ * reference them here — the placeholders below show exactly where to swap.
+ */
+export const reviewScreenshots = [
+  { src: "/reviews/review-1.png", alt: "Customer WhatsApp review screenshot 1" },
+  { src: "/reviews/review-2.png", alt: "Customer WhatsApp review screenshot 2" },
+  { src: "/reviews/review-3.png", alt: "Customer WhatsApp review screenshot 3" },
+  { src: "/reviews/review-4.png", alt: "Customer WhatsApp review screenshot 4" },
 ];
 
 export const channels = [
